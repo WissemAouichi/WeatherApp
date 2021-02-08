@@ -6,23 +6,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
-    <!-- *********************** Navbar ******************************** -->
-    <!-- ********************** Navbar Ends ****************************** -->
+ <!-- *********************** Navbar ******************************** -->
+ <nav class="navbar navbar-expand-lg bg-dark navbar-dark scrolling-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>Weather App</strong></a>
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
 
-    <h1>Hello World</h1>
-    <form id="frm1" action="/action_page.php">
-        First name: <input type="text" name="fname" value="Tunis"><br>
-    </form> 
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active px-3 font-weight-bold">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="contacts.html">Contact</a>
+                </li>
+            </ul>
 
-    <button onclick="myFunction()">Try it</button>
-
-    <div class="container">
-        <img class="icon"></img>
-        <p class="temp"></p>
-        <p class="weather"></p>
+        </div>
     </div>
+</nav>
+<!-- Navbar -->
+<!-- ********************** Navbar Ends ****************************** -->
+<!-- Full Page Intro -->
+<div class="view">
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light align-items-center">
+        <!-- Content -->
+        <div class="container py-5 d-flex justify-content-center">
+            <!--Grid row-->
+            <div class="wrapper">
+                <h1>Weather App</h1>
+                <form id="frm1" >
+                    City name: <input type="text" name="fname"  id="cityname"><br>
+                </form> 
+            
+                <button onclick="myFunction()">Try it</button>
+            
+                <div class="container">
+                        <img class="icon"></img>
+                        <p class="temp"></p>
+                        <p class="weather"></p>
+                </div>
+            </div>
+        </div>
+        <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+</div>
+<!-- Full Page Intro -->
+
+
+  
 
     <script src="script.js"></script>
 <!-- ********************** Bootstrap JS *************************** -->

@@ -1,12 +1,9 @@
 var city="abc";
 
-myFunction();
 
 function myFunction() {
-    var form = document.getElementById("frm1");
-    var text = "";
-    text += form.elements[0].value;
-    city= text;
+    var city = document.getElementById("cityname").value;
+
 
   console.log(city);
 
@@ -25,4 +22,4 @@ function myFunction() {
   
 }
   
-  
+myFunction();
