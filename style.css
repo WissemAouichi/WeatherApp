@@ -1,17 +1,8 @@
-body {
-    background-color: aqua;
-}
-
 .view {
     background-image: url(pexels-aleksandar-pasaric-325185.jpg);
     background-size: cover;
-    height: 40rem;
+    height: 37.5rem;
 }
-
-.button {
-
-}
-
 
 .glow-on-hover {
     width: 220px;
