@@ -2,7 +2,7 @@ var city="abc";
 
 
 function myFunction() {
-    var city = document.getElementById("cityname").value;
+    var city = document.getElementById("name").value;
 
 
   console.log(city);
@@ -16,7 +16,7 @@ function myFunction() {
   var description= data.weather[0].description;
   
   $(".icon").attr("src", icon);
-  $(".weather").text(weather);
+  $(".weather").text("The temperture is: "+weather);
   $(".temp").text(description);
   });
   
