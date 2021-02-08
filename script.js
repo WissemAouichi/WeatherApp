@@ -10,8 +10,13 @@ function myFunction() {
   var weather = data.main.temp
   var description= data.weather[0].description;
   $(".icon").attr("src", icon);
-  $(".weather").text("The temperture is: "+weather);
+  $(".weather").text(weather+"°C");
   $(".temp").text(description);
+  $(".city").text(city);
+  var today = new Date();
+
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()+" "+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+$(".date").text(date);
   });
 } 
 
