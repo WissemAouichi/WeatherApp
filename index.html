@@ -36,10 +36,10 @@
     <!-- Mask & flexbox options-->
     <div class="mask rgba-black-light align-items-center">
         <!-- Content -->
-        <div class="container py-5 d-flex justify-content-center">
+        <div class="container pt-5 d-flex justify-content-center">
             <!--Grid row-->
             <div class="wrapper">
-                <h1 class="py-4">Weather Forecast</h1>
+                <h1 class="py-3">Weather Forecast</h1>
                 <div class="form__group field py-4">
                     <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
                     <label for="name" class="form__label">City Name</label>
@@ -48,9 +48,34 @@
                     <button onclick="myFunction()" class="glow-on-hover">Try it</button>
                 </div>
                 <div class="container">
-                        <img class="icon"></img>
+                        
                         <h3 class="temp"></h3>
                         <h4 class="weather"></h4>
+                </div>
+            </div>
+        </div>
+        <div class="page-content page-container" id="page-content">
+            <div class="">
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-8 pl-5 grid-margin stretch-card  mx-0">
+                        <!--weather card-->
+                        <div class="card card-weather">
+                            <div class="card-body">
+                                <div class="weather-date-location">
+                                    <h3>Friday</h3>
+                                    <p class="text-gray"> <span class="weather-date">25 March, 2019</span> <span class="weather-location">Sydney, Australia</span> </p>
+                                </div>
+                                <div class="weather-data d-flex">
+                                    <div class="mr-auto">
+                                        <img class="icon"></img>
+                                        <h4 class="display-3">32 <span class="symbol">°</span>C</h4>
+                                        <p> Cloudy </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--weather card ends-->
+                    </div>
                 </div>
             </div>
         </div>
